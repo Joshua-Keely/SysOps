@@ -18,3 +18,11 @@
         name: apache2
         state: started
         enabled: yes
+
+    - name: Copy html
+      copy:
+        src: ./html/html/royal
+        dest: /var/www/html
+        owner: www-data
+        group: www-data
+        mode: '0755'
