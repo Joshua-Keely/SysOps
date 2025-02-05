@@ -1,5 +1,5 @@
 ---
-- name: Install and start Apache2
+- name: Install and start apache2
   hosts: server
   sudo: true
   tasks:
