@@ -3,6 +3,10 @@
   hosts: server
   become: yes
   tasks:
+    - name: update apt list
+      apt:
+        update_cache: yes
+
     - name: Install apache2
       apt:
         name: apache2
