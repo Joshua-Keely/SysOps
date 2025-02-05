@@ -1,7 +1,7 @@
 ---
 - name: Install and start apache2
   hosts: server
-  sudo: true
+  become: yes
   tasks:
     - name: update apt list
       apt:
